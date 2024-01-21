@@ -1,0 +1,28 @@
+ 
+   Questions on API Implementation and Documentation
+   
+Q1. In API why GET request doesn't have request body the request body format is none.
+
+Q2. In the Given Examples of the Rest API in the video tutorials of how to implement and 
+    
+	document API request and response we have two collections, the courses and students collections 
+	
+	in the courses collection the non resources that is the query parameters which is optional
+
+	are all implemented can we still implement the query parameters of students collecton if the condition
+	
+	required us to do so.
+	
+Q3. When can we use custom header and explain more about path parameters and cookie and what they are used for.
+
+
+
+
+
+
+
+
+
+
+
+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
