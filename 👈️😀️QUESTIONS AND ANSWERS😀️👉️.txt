@@ -1,0 +1,29 @@
+				👇️😀️QUESTIONS😀️👉️
+				__________________
+
+Q1. How can i become a full stack developer
+
+				👇️😀️ANSWERS😀️👍️
+			        ________________
+
+A1. To become a full stack developer, you'll need to have a strong understanding of both front-end and back-end technologies. Here's a high-level overview of the skills and technologies you should focus on:
+
+Front-end:
+- HTML/CSS: Understand the structure and styling of web pages.
+- JavaScript: Learn the fundamentals of JavaScript and popular libraries/frameworks like React, Angular, or Vue.js.
+- Responsive Design: Understand how to create web applications that work well on different devices and screen sizes.
+
+Back-end:
+- Node.js: Learn how to build server-side applications using Node.js.
+- Database Management: Understand how to work with databases like MySQL, MongoDB, or PostgreSQL.
+- API Development: Learn how to create and consume APIs to connect the front-end and back-end of your applications.
+
+Additional Skills:
+- Version Control: Learn how to use Git for version control and collaboration.
+- DevOps: Understand the basics of deploying and managing applications in a production environment.
+- Testing: Learn about unit testing, integration testing, and end-to-end testing to ensure the quality of your code.
+
+Continuous Learning:
+- Stay updated with the latest technologies and best practices in both front-end and back-end development.
+
+By mastering these skills and technologies, you can become a proficient full stack developer.
