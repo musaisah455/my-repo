@@ -27,3 +27,5 @@ Continuous Learning:
 - Stay updated with the latest technologies and best practices in both front-end and back-end development.
 
 By mastering these skills and technologies, you can become a proficient full stack developer.
+
+It very essential for someone to know when and where to apply each and every part of the knowledge.
