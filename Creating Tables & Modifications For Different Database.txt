@@ -1,0 +1,174 @@
+CREATE TABLE book(
+	book_id BIGSERIAL PRIMARY KEY,
+	title VARCHAR(250) NOT NULL,
+	author VARCHAR(250) NOT NULL,
+	isbn VARCHAR(250) UNIQUE NOT NULL,
+	price DOUBLE PRECISION
+);
+
+INSERT INTO book(title, author, isbn, price)
+VALUES
+('The Great Book', 'F. Scott Ley', '725-0446310789', 5.70),
+('History', 'Harber Lee', '725-0743273565', 7.90),
+('1984 Story Book', 'Mary Jane', '725-0451524935', 6.99)
+
+
+INSERT INTO book(title, author, isbn, price)
+VALUES('The Great Book', 'F. Scott Ley', '725-0446310789', 5.70);
+
+INSERT INTO book(title, author, isbn, price)
+VALUES('History', 'Harber Lee', '725-0743273565', 7.90);
+
+INSERT INTO book(title, author, isbn, price)
+VALUES('1984 Story Book', 'Mary Jane', '725-0451524935', 6.99);
+
+INSERT INTO book(book_id, title, author, isbn, price)
+VALUES(1,'The Great Book', 'F. Scott Ley', '725-0446310789', 5.70);
+
+INSERT INTO book(book_id, title, author, isbn, price)
+VALUES(2,'History', 'Harber Lee', '725-0743273565', 7.90);
+
+INSERT INTO book(book_id, title, author, isbn, price)
+VALUES(3,'1984 Story Book', 'Mary Jane', '725-0451524935', 6.99);
+
+
+
+CREATE TABLE users(
+	user_id SERIAL PRIMARY KEY,
+	username VARCHAR(50) UNIQUE NOT NULL,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	address VARCHAR(200) NOT NULL,
+	email VARCHAR(100) UNIQUE NOT NULL
+)
+
+
+ CREATE DATABASE IF NOT EXISTS `table_1`;
+ USE `table_1`;
+ 
+ DROP TABLE IF EXISTS `book`;
+
+CREATE TABLE book(
+	book_id BIGINT PRIMARY KEY AUTO_INCREMENT,
+	title VARCHAR(250) NOT NULL,
+	author VARCHAR(250) NOT NULL,
+	isbn VARCHAR(250) UNIQUE NOT NULL,
+	price DOUBLE PRECISION
+);
+
+INSERT INTO book(title, author, isbn, price)
+VALUES
+('The Great Book', 'F. Scott Ley', '725-0446310789', 5.70),
+('History', 'Harber Lee', '725-0743273565', 7.90),
+('1984 Story Book', 'Mary Jane', '725-0451524935', 6.99)
+
+
+
+INSERT INTO users(
+	user_id,
+	username,
+	first_name,
+	last_name,
+	address,
+	email
+)
+values(
+	1,
+	'lumber123',
+	'lim',
+	'lama',
+	'Block D10',
+	'lim@mail.com'
+)
+
+CREATE TABLE users(
+	username VARCHAR(50) NOT NULL PRIMARY KEY,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	address VARCHAR(200) NOT NULL,
+	email VARCHAR(100) UNIQUE NOT NULL
+)
+
+CREATE TABLE users(
+	username VARCHAR(50) UNIQUE NOT NULL PRIMARY KEY,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	address VARCHAR(200) NOT NULL,
+	email VARCHAR(100) UNIQUE NOT NULL
+)
+
+
+
+INSERT INTO users(
+	username,
+	first_name,
+	last_name,
+	address,
+	email
+)
+values(
+	'lumber123',
+	'lim',
+	'lama',
+	'Block D10',
+	'lim@mail.com'
+)
+
+CREATE TABLE products (
+    product_id SERIAL PRIMARY KEY,
+    product_name TEXT,
+    price DOUBLE PRECISION
+);
+
+INSERT INTO products (product_name, price) VALUES ('Laptop', 1299.99);
+INSERT INTO products (product_name, price) VALUES ('Mouse', 25.50);
+
+To Clear All The Inserted Data In The Database And Reset The Count To One In PostgreSQL
+
+    -- Example for specific tables:
+    BEGIN;
+    TRUNCATE TABLE "book" RESTART IDENTITY CASCADE;
+    COMMIT;
+
+
+Postgres
+
+$ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+
+$ docker run --name database -p new port:old port -e POSTGRES_PASSWORD=databasepassword -d postgres
+
+docker run --name student -p 5431:5432 -e POSTGRES_PASSWORD=#Musa5254 -d postgres
+
+docker run --name table -p 5430:5432 -e POSTGRES_PASSWORD=#Musa5254 -d postgres
+
+
+Mysql
+
+$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+
+$ docker run --name some-mysql -p new port:old port -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
+
+docker run --name table_1 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=@Musa5254 -d mysql
+
+
+To Start Mongodb Server
+
+sudo mongod --dbpath=/Users/musa/data/db
+
+
+To Clear All The Inserted Data In The Database And Reset The Count To One In Mongodb
+
+db.database_sequences.updateOne(
+  { _id: "book_sequence" },
+  { $set: { seq: 0 } }
+);
+
+
+
+
+
+
+
+
+
+
