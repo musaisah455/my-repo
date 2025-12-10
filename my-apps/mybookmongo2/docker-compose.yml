@@ -1,0 +1,13 @@
+services:
+  mongo:
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: musaisah455
+      MONGO_INITDB_ROOT_PASSWORD: '@Musa5254'
+    ports:
+      - 27017:27017
+    volumes:
+      - mongotable_2_0:/data/db
+volumes:
+  mongotable_2_0:
+    driver: local

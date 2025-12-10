@@ -1,0 +1,26 @@
+services:
+  db:
+    image: postgres:17 # Or your desired PostgreSQL version
+    container_name: my_employee_db
+    environment:
+      POSTGRES_DB: employee
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: '#Musa5254'
+    ports:
+      - "5433:5432" # Map host port 5432 to container port 5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # Persist data in a named volume
+
+  adminer:
+      image: adminer:latest # Use the official Adminer image
+      container_name: my_adminer_ui
+      ports:
+        - "8080:8080" # Map host port 8080 to container port 8080
+      environment:
+        ADMINER_DEFAULT_SERVER: db # Sets the default server to the 'db' service name
+      depends_on:
+        - db # Ensures the database is running before Adminer starts
+
+volumes:
+  postgres_data:
+    driver: local
