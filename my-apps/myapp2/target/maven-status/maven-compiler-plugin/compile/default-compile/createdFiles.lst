@@ -1,0 +1,4 @@
+com/code/myapp3/entity/UserDetail.class
+com/code/myapp3/Myapp3Application.class
+com/code/myapp3/dao/UserDaoImpl.class
+com/code/myapp3/dao/UserDao.class

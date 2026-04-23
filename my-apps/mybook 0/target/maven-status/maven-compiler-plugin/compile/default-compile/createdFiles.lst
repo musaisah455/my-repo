@@ -1,0 +1,5 @@
+com/code/myapps/mybook/model/Book.class
+com/code/myapps/mybook/repository/BookRepository.class
+com/code/myapps/mybook/MybookApplication.class
+com/code/myapps/mybook/rest/BookController.class
+com/code/myapps/mybook/service/BookService.class

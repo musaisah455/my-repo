@@ -1,0 +1,3 @@
+com/code/myapp/MyappApplication.class
+com/code/myapp/rest/UserRestController.class
+com/code/myapp/entity/UserDetail.class

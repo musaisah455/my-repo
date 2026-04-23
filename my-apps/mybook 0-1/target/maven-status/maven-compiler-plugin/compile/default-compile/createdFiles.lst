@@ -1,0 +1,8 @@
+com/code/myapps/mybook/exception/ErrorResponse.class
+com/code/myapps/mybook/MybookApplication.class
+com/code/myapps/mybook/service/BookService.class
+com/code/myapps/mybook/model/Book.class
+com/code/myapps/mybook/repository/BookRepository.class
+com/code/myapps/mybook/exception/BookNotFoundException.class
+com/code/myapps/mybook/exception/GlobalExceptionHandler.class
+com/code/myapps/mybook/rest/BookController.class
